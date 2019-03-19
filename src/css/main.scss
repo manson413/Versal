@@ -85,6 +85,7 @@ input::-webkit-search-results-decoration {
 }
 
 $blue-color: #228cdd;
+$dark-blue: #4c6699;
 $red-color: #f44336;
 $grey-color: #eef3f5;
 $text-color: #171717;
@@ -120,6 +121,11 @@ b, strong {
   font-family: 'Circe-Bold', sans-serif;
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
 h2 {
   font-size: 40px;
   line-height: 44px;
@@ -149,6 +155,10 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
   color: #fff;
+}
+
+main {
+  min-height: calc(100vh - 426px);
 }
 
 address {
@@ -572,7 +582,7 @@ address {
   padding-bottom: 50px;
 }
 
-.benefits {
+.triangle-bg {
   background: url(../img/bebefit-left-bg.png) repeat-y left center, url(../img/bebefit-right-bg.png) repeat-y right center;
 }
 
@@ -697,7 +707,7 @@ section {
   background: $grey-color;
 }
 
-.promotions__container {
+.custom-container {
   max-width: 1330px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1208,5 +1218,49 @@ fieldset {
     &:hover {
       text-decoration: none;
     }
+  }
+}
+
+.blue-header {
+  color: $dark-blue;
+  .main-menu {
+    li {
+      a {
+        &:before {
+          background: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+.title-wrapper {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/title-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  h1 {
+    color: #fff;
+  }
+}
+
+.floor-card__wrapper {
+  padding-top: 40px;
+  padding-bottom: 140px;
+  background: url(../img/floor-card-bg.jpg)no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-block__form {
+  margin-bottom: 75px;
+  .first-screen__search-input {
+    border: 1px solid $dark-blue;
   }
 }

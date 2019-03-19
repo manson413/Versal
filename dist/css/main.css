@@ -12850,6 +12850,12 @@ strong
     font-family: 'Circe-Bold', sans-serif;
 }
 
+h1
+{
+    font-size: 40px;
+    line-height: 44px;
+}
+
 h2
 {
     font-family: 'Circe-Bold', sans-serif;
@@ -12890,6 +12896,11 @@ header
     padding-bottom: 25px;
 
     color: #fff;
+}
+
+main
+{
+    min-height: calc(100vh - 426px);
 }
 
 address
@@ -13566,7 +13577,7 @@ address p
     padding-bottom: 50px;
 }
 
-.benefits
+.triangle-bg
 {
     background: url(../img/bebefit-left-bg.png) repeat-y left center, url(../img/bebefit-right-bg.png) repeat-y right center;
 }
@@ -13733,7 +13744,7 @@ section .btn-group
     background: #eef3f5;
 }
 
-.promotions__container
+.custom-container
 {
     max-width: 1330px;
     margin-right: auto; 
@@ -14449,4 +14460,73 @@ fieldset legend
 .custom-checkbox__text a:hover
 {
     text-decoration: none;
+}
+
+.blue-header
+{
+    color: #4c6699;
+}
+.blue-header .main-menu li a:before
+{
+    background: #4c6699;
+}
+
+.title-wrapper
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 110px;
+
+    background: url(../img/title-bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+            background-size: cover; 
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.title-wrapper h1
+{
+    color: #fff;
+}
+
+.floor-card__wrapper
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    padding-top: 40px;
+    padding-bottom: 140px;
+
+    background: url(../img/floor-card-bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+            background-size: cover;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.search-block__form
+{
+    margin-bottom: 75px;
+}
+.search-block__form .first-screen__search-input
+{
+    border: 1px solid #4c6699;
 }
